@@ -61,8 +61,12 @@ A RESTful blogging platform built with **Spring Boot**, allowing users to create
 ## 📖 API Endpoints  
 | Endpoint                | Method | Description                     |  
 |-------------------------|--------|---------------------------------|  
-| `/api/auth/signup`      | POST   | Register new user               |  
-| `/api/posts?page=0&size=10` | GET | Paginated posts             |  
+ | `/api/auth/signup`      | POST   | Register a new user             |  
+ | `/api/auth/login`       | POST   | Authenticate & get JWT token    |  
+ | `/api/posts`            | GET    | Get all posts (paginated)       |  
+ | `/api/posts/{id}`       | GET    | Get a post by ID                |  
+ | `/api/categories`       | POST   | Create a new category           |  
+ | `/api/comments/{postId}`| POST   | Add a comment to a post         |  
 
 *(Full endpoints in Swagger.)*  
 
