@@ -1,7 +1,3 @@
-Here’s an updated **`README.md`** with explicit versions for key dependencies (based on your `pom.xml`):  
-
----  
-
 # BlogingApp – A Spring Boot Blogging Application  
 
 A RESTful blogging platform built with **Spring Boot**, allowing users to create, read, update, and delete blog posts, manage categories, and interact with comments.  
@@ -27,8 +23,6 @@ A RESTful blogging platform built with **Spring Boot**, allowing users to create
 | **ModelMapper**  | 3.1.1            |  
 | **Swagger**      | SpringDoc OpenAPI 2.2.0 |  
 | **Maven**        | (Wrapper) 3.9.5  |  
-
-*(Versions are extracted from your `pom.xml`. Adjust if needed.)*  
 
 ## 📥 Prerequisites  
 - **Java 17** (OpenJDK/Amazon Corretto)  
@@ -68,28 +62,3 @@ A RESTful blogging platform built with **Spring Boot**, allowing users to create
  | `/api/categories`       | POST   | Create a new category           |  
  | `/api/comments/{postId}`| POST   | Add a comment to a post         |  
 
-*(Full endpoints in Swagger.)*  
-
-## 🐳 Docker Support (Optional)  
-To containerize:  
-```sh  
-docker build -t blogapp .  
-docker run -p 8080:8080 blogapp  
-```  
-
-## 🤝 Contributing  
-1. Fork → Create branch → Commit → Push → PR.  
-2. Follow [GitHub Flow](https://guides.github.com/introduction/flow/).  
-
-## 📜 License  
-MIT. See [LICENSE](LICENSE).  
-
----  
-
-### Need Adjustments?  
-Let me know if you’d like to:  
-- Add **testing frameworks** (JUnit 5, Mockito versions).  
-- Specify **cloud deployment** (AWS/Heroku).  
-- Include **screenshots** or GIFs.  
-
-Happy coding! 🎉
